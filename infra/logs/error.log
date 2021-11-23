@@ -1,0 +1,12 @@
+[Tue Nov 23 11:35:40.447373 2021] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 23 11:35:40.512663 2021] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 23 11:35:40.516929 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.15 OpenSSL/1.1.1d configured -- resuming normal operations
+[Tue Nov 23 11:35:40.517690 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Nov 23 11:35:53.980405 2021] [php7:warn] [pid 18] [client 172.23.0.1:63482] PHP Warning:  require(/var/www/default/public/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/default/public/index.php on line 34
+[Tue Nov 23 11:35:53.981911 2021] [php7:error] [pid 18] [client 172.23.0.1:63482] PHP Fatal error:  require(): Failed opening required '/var/www/default/public/../vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/default/public/index.php on line 34
+[Tue Nov 23 11:36:49.203834 2021] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Nov 23 11:36:49.266671 2021] [ssl:warn] [pid 1] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 23 11:36:49.274131 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.15 OpenSSL/1.1.1d configured -- resuming normal operations
+[Tue Nov 23 11:36:49.276130 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

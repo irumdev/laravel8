@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web:
+    image: infra-laravel
+    tty: true
+    stdin_open: true
+    container_name: 'laravel-apache2'
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      # Source
+      - ../:/var/www/default
+      # PHP ini
+      - ./config/php/php.ini:/usr/local/etc/php/php.ini
+      # Apache Site Configuration
+      - ./config/apache2/conf:/etc/apache2/sites-enabled
+      # TLS Certification Files
+      - ./config/apache2/certs:/etc/apache2/certification
+      # Apache Log Files
+      - ./logs/access.log:/var/log/apache2/access.log
+      - ./logs/error.log:/var/log/apache2/error.log
